@@ -11,17 +11,6 @@ describe("Pruebas de cálculos matemáticos", () => {
     expect(Calculadora.sumar(1, 2)).toBe(3);
   });
 
-  describe("Operación de Multiplicación", () => {
-
-    test("Multiplicar 2 por 4 debe ser igual a 8", () => {
-      expect(Calculadora.multiplicar(2, 4)).toBe(8);
-    });
-
-    test("Multiplicar 0 por 7 debe ser igual a 0", () => {
-      expect(Calculadora.multiplicar(0, 7)).toBe(0);
-    });
-  });
-
   describe("Operación de División", () => {
 
     test("Dividir 10 entre 2 debe ser igual a 5", () => {
@@ -30,6 +19,17 @@ describe("Pruebas de cálculos matemáticos", () => {
 
     test("Dividir 7 entre 0 debe lanzar un error", () => {
       expect(() => Calculadora.dividir(7, 0)).toThrow("No se puede dividir por cero");
+    });
+  });
+
+  describe("Operación de Multiplicación", () => {
+
+    test("Multiplicar 2 por 4 debe ser igual a 8", () => {
+      expect(Calculadora.multiplicar(2, 4)).toBe(8);
+    });
+
+    test("Multiplicar 0 por 7 debe ser igual a 0", () => {
+      expect(Calculadora.multiplicar(0, 7)).toBe(0);
     });
   });
 });
