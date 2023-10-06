@@ -1,89 +1,21 @@
-# React + Vite + Jest
+## Instalacion
 
-Vite es una avanzada herramienta de desarrollo web que combina un servidor de desarrollo rápido con un sistema de compilación eficiente. Su objetivo es proporcionar una experiencia de desarrollo simple, flexible y fácil de usar.
+#### clone o descargue el repositorio donde esta leyendo esto, al tenerlo entra a la carpeta creada y ejecuta  ```npm install```
 
-## Instalación de Vite:
+#### Ejecuta en la terminal ```npm run dev```
 
-El proceso de instalación comienza con la creación de un nuevo proyecto (asegurándote de tener Node.js instalado) y la apertura de la consola en la ubicación del proyecto. Luego, ejecutas el siguiente comando en la consola:
+## Generación de Evaluaciones
 
-```bash
-npm create vite
-```
+Si deseas crear evaluaciones para tu proyecto, puedes seguir estos pasos:
 
-Esto abrirá un asistente que te permitirá definir el nombre de tu proyecto. Después de ingresar el nombre, se presentará una lista de frameworks que puedes utilizar con Vite. En este caso, estaremos trabajando con React, y la variante que elegiremos será JavaScript + SWC.
+Establece una sección dedicada a las evaluaciones en la estructura de tu proyecto. Puedes nombrar esta sección como evaluaciones.
 
-Luego, para poner en marcha la aplicación, navega al directorio creado con el nombre de tu proyecto y ejecuta:
+Dentro de la sección de evaluaciones, crea carpetas temáticas para organizar tus evaluaciones. Por ejemplo, puedes crear una carpeta llamada tema1 para almacenar evaluaciones relacionadas con ese tema específico. Esto te ayudará a mantener un orden claro en tu proyecto.
 
-```bash
-npm install
-```
+Dentro de cada carpeta temática, agrega archivos que contengan las evaluaciones correspondientes. Asegúrate de seguir un formato de nomenclatura adecuado, como evaluacion1.js, para que sea fácil identificarlas.
 
-Esto instalará las dependencias de Node. Una vez completada la instalación, puedes iniciar el servidor de desarrollo con el siguiente comando:
+Configura tus evaluaciones de manera apropiada para asegurarte de que sean efectivas y relevantes para tu proyecto.
 
-```bash
-npm run dev
-```
+Al seguir estos pasos y adaptarlos a las necesidades de tu proyecto, podrás crear y gestionar evaluaciones de manera eficiente.
 
-De esta manera, tendrás tu servidor en funcionamiento. Por defecto, Vite crea una aplicación básica con un icono de Vite y React, así como un contador en el centro. Si el servidor local funciona y puedes ver estas vistas, significa que la instalación y configuración inicial de Vite ha sido exitosa.
-
-## Instalación de Jest
-
-Jest es un framework de pruebas de JavaScript de código abierto desarrollado por Facebook. Ofrece un conjunto completo de herramientas que incluye una biblioteca de aserciones, un corredor de pruebas y soporte para pruebas unitarias, de integración y de aceptación.
-
-Jest es una elección sólida para probar aplicaciones React, ya que está especialmente diseñado para este propósito. Sin embargo, también se puede utilizar para probar cualquier aplicación JavaScript.
-
-Para obtener instrucciones detalladas sobre cómo instalar Jest, puedes consultar la [documentación oficial de Jest](https://jestjs.io/docs/getting-started). A continuación, se presentan los pasos para instalar Jest en tu proyecto:
-
-En primer lugar, instala Jest utilizando el siguiente comando:
-
-```bash
-npm install --save-dev jest
-```
-
-Además, instala Babel, que es un compilador JavaScript utilizado para transformar código moderno en JavaScript compatible con navegadores antiguos y entornos no compatibles. Esto es necesario para manejar las características de ECMAScript 2015+ como clases, módulos, promesas y funciones flecha. Puedes instalar Babel de la siguiente manera:
-
-```bash
-npm install --save-dev babel-jest @babel/core @babel/preset-env
-```
-
-Luego, crea un archivo de configuración de Babel llamado `babel.config.cjs` en el directorio raíz del proyecto con el siguiente contenido:
-
-```javascript
-module.exports = {
-  presets: [["@babel/preset-env", { targets: { node: "current" } }]],
-};
-```
-
-Finalmente, instala la última dependencia necesaria desde la biblioteca de Jest:
-
-```bash
-npm install --save-dev @types/jest
-```
-
-Para habilitar la ejecución de pruebas, agrega el siguiente script en el archivo `package.json` bajo la sección "scripts":
-
-```json
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-  "preview": "vite preview",
-  "test": "jest --watchAll"
-}
-```
-
-Con esta configuración, estás listo para realizar pruebas en tu proyecto. Para ejecutar las pruebas, abre dos consolas: una para ejecutar `npm run dev` y otra para `npm run test`. En la consola de pruebas, podrás ver los resultados de las pruebas.
-
-## Creación de las Pruebas
-
-Para crear pruebas, sigue estos pasos:
-
-1. Crea una carpeta llamada `test` en la estructura de carpetas de tu proyecto.
-
-2. Crea una carpeta de ejemplo, por ejemplo, `version`, donde se almacenarán los archivos que deseas probar. También puedes aplicar este procedimiento a los componentes para garantizar su correcto funcionamiento.
-
-3. Dentro de la carpeta de pruebas (`test`), agrega archivos que correspondan a los archivos que deseas probar en la carpeta `version`. Asegúrate de nombrar los archivos de prueba con el formato `nombre.test.js` para que Jest los identifique automáticamente como pruebas.
-
-Siguiendo estos pasos y configurando adecuadamente las pruebas, podrás ver en la consola de pruebas qué pruebas han sido aprobadas y cuáles no.
-
-¡Ahora estás listo para realizar pruebas en tu proyecto React con Vite y Jest!
+¡Ahora estás preparado para desarrollar evaluaciones en tu proyecto con precisión y eficacia!
